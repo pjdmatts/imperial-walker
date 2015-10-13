@@ -5,4 +5,12 @@ class CategoriesController < ApplicationController
 
   def new
   end
+
+  def create
+  	@category = Category.new(params[:category])
+ 
+  	@category.save
+  	redirect_to categories_path
+  end
+
 end
