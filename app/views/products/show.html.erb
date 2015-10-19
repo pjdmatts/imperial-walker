@@ -1,6 +1,23 @@
 <h1>Product Summary</h1>
+<div class="row">
+	<div class="col-md-6">
+		<table class="table">
+			<thead>
+			</thead>
+			<tr>
+				<td>Name:</td>
+				<td><%= @product.name %></td>
+			</tr>
+			<tr>
+				<td>Category:</td>
+				<td><%= @category_name %></td>
+			</tr>
+			<tr>
+				<td>Price:</td>
+				<td><%= @product.price %></td>
+			</tr>
+		</table>
+	</div>
+</div>
 
-<p>name: <%= @product.name %></p>
-<p>category: <%= @category_name %></p>
-<p>price: <%= @product.price %></p>
-<p><%= link_to 'Edit', edit_product_path(@product) %> | <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> | <%= link_to 'New Product', new_product_path %></p>
+<p><%= link_to 'Edit', edit_product_path(@product) %> | <%= link_to 'Delete', @product, method: :delete, data: { confirm: 'Are you sure?' } %> | <%= link_to 'New Product', new_product_path %></p>
