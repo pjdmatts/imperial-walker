@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
 
   def new
   	@product = Product.new
+    @category_options = Category.all.map{|c| [ c.name, c.id ] }
   end
 
   def create
