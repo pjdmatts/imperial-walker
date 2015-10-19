@@ -18,7 +18,7 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-6">
-      <%= select_tag(:category_id, options_for_select(@category_options)) %>
+      <%= f.select(:category_id, @category_options) %>
     </div>
   </div>
   
