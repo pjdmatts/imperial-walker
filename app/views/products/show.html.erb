@@ -1,8 +1,6 @@
 <h1>Product Summary</h1>
 
-<%= @product.name %>
-<%= @product.category %>
-<%= @product.price %>
-<%= link_to 'Edit', edit_product_path(@product) %>
-<%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %>
-<%= link_to 'New Product', new_product_path %>
+<p>name: <%= @product.name %></p>
+<p>category: <%= @category_name %></p>
+<p>price: <%= @product.price %></p>
+<p><%= link_to 'Edit', edit_product_path(@product) %> | <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> | <%= link_to 'New Product', new_product_path %></p>
