@@ -18,7 +18,7 @@
 					<td><%= product.name %></td>
 					<td><%= Category.find(product.category_id).name %></td>
 					<td><%= product.price %></td>
-					<td><%= link_to "Show All #{Category.find(product.category_id).name}", products_path(product.category_id) %></td>
+					<td><%= link_to 'Show All', '#' %></td>
 					<td><%= link_to 'Show', product %></td>
 					<td><%= link_to 'Edit', edit_product_path(product) %></td>
 					<td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>

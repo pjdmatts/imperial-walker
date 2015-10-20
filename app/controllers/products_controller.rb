@@ -1,10 +1,6 @@
 class ProductsController < ApplicationController
 	def index
-    if params[:category_id]
-      @products = Product.find_by(category_id: params[:category_id])
-    else
-      @products = Product.all
-    end
+    @products = Product.all
   end
 
   def show
